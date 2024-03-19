@@ -1,0 +1,6 @@
+function Yint = c_s_L(Xint,k1,k2,n,m)
+global x y
+
+Yint =  k1/6*( (Xint-x(m))^3/(x(n)-x(m)) - (Xint-x(m))*(x(n)-x(m)) )...
+       -k2/6*( (Xint-x(n))^3/(x(n)-x(m)) - (Xint-x(n))*(x(n)-x(m)) )...
+      +(y(n)*(Xint-x(m))-y(m)*(Xint-x(n)))/(x(n)-x(m));
